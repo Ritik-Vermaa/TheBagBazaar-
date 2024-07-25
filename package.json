@@ -1,0 +1,19 @@
+{
+  "name": "thebagbazaar",
+  "version": "1.0.0",
+  "description": "TheBagBazaar is an e-commerce platform designed to cater specifically to bag enthusiasts. The platform aims to provide a comprehensive and user-friendly online shopping experience where users can browse, compare, and purchase a variety of bags from different categories, including handbags, backpacks, travel bags, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritik-Vermaa/TheBagBazaar-.git"
+  },
+  "author": "Ritik Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ritik-Vermaa/TheBagBazaar-/issues"
+  },
+  "homepage": "https://github.com/Ritik-Vermaa/TheBagBazaar-#readme"
+}

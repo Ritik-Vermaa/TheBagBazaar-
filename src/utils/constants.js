@@ -1,3 +1,3 @@
 const DB_NAME = "TheBegBazaarEcommerce";
 
-module.exports = { DB_NAME };
+module.exports = DB_NAME;

@@ -4,7 +4,7 @@
   "description": "TheBagBazaar is an e-commerce platform designed to cater specifically to bag enthusiasts. The platform aims to provide a comprehensive and user-friendly online shopping experience where users can browse, compare, and purchase a variety of bags from different categories, including handbags, backpacks, travel bags, and more.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +18,18 @@
   },
   "homepage": "https://github.com/Ritik-Vermaa/TheBagBazaar-#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.6",
+    "debug": "^4.3.6",
     "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

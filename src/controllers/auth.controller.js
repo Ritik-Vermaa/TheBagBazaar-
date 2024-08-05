@@ -30,7 +30,8 @@ module.exports.registerUser = async (req, res) => {
                     secure: true
                 });
 
-                res.status(201).render('index');
+                let error = req.flash('error');
+                res.status(201).render('index' , {error});
             }
         }
 
@@ -65,7 +66,7 @@ module.exports.loginUser = async (req, res) => {
                 secure: true
             });
 
-            res.status(200).render('shop');
+            res.status(200).redirect('/shop');
         }
 
 
@@ -73,3 +74,13 @@ module.exports.loginUser = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 }
+
+module.exports.logoutUser = async (req, res) => {
+    try {
+        res.clearCookie('Token');
+        res.status(200).redirect('/');
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+}
+

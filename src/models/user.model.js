@@ -1,4 +1,3 @@
-const { is } = require('express/lib/request');
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -19,10 +18,10 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true
     },
-    cart: {
-        type: Array,
-        default: []
-    },
+    cart: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:"Product",
+    }],
     orders: {
         type: Array,
         default: []
